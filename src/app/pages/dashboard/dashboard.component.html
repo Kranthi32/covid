@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-7">
+        <div class="mb-4">
+            <h5>All Country Report</h5>
+        </div>
+        <table class="table table-bordered table-striped font-12">
+            <thead>
+                <tr class="country">
+                    <th>Country</th>
+                    <th>Total</th>
+                    <th>Today</th>
+                    <th>Active</th>
+                    <th>Deaths</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of countries | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+                    <td class="country">{{i.country}}</td>
+                    <td>{{i.cases}}</td>
+                    <td>{{i.todayCases}}</td>
+                    <td>{{i.active}}</td>
+                    <td>{{i.deaths}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+        <ngb-pagination class="d-flex justify-content-center" [(page)]="page" [pageSize]="pageSize" [collectionSize]="countryList.length"></ngb-pagination>
+       
+    </div>
+
+    <div class="col-md-5">
+        <div id="chart-pie"></div>
+    </div>
+</div>

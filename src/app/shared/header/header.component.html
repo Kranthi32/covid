@@ -1,0 +1,13 @@
+<input type="checkbox"  id="menu" class=" fas fa-bars leftmenu">
+<div class="side-menu">
+    <a routerLink="/pages/dashboard"><i class="fa fa-user"></i><span>Dashboard</span></a>
+    <a routerLink="/charts/maps"><i class="fa fa-user"></i><span>Maps</span></a>
+    <a routerLink="/login"><span>Logout</span></a>
+</div>
+<div class="data"> 
+    <div class="row">
+        <div class="body-part">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

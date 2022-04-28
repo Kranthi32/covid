@@ -1,0 +1,92 @@
+
+.container{
+    position: relative;
+    width: 340px;
+    height: 600px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.intro-content{
+    height: 120px;
+}
+.intro-content h2{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+}
+.intro-content h2 span{
+    color: #6236FF;
+}
+.intro-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.intro-content p span{
+    color: #adadad;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+form{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.input{
+    position: relative;
+}
+.input input{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    transition: .2s;
+    border-bottom: 1px solid #adadad;
+}
+.input label{
+    position: absolute;
+    top: 11px;
+    left: 0;
+    color: #adadad;
+    font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+    transition: .2s;
+}
+.input input:focus ~ label , .input input:valid ~ label{
+    top: -10px;
+    color: #000;
+}
+.input input:focus{
+    border-bottom-color: #000;
+}
+.input button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #6236FF;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content p {
+    padding: .5rem 0;
+    font-size: .7rem;
+    color: #adadad;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-content p a{
+    color: #6236FF;
+    text-decoration: none;
+}
